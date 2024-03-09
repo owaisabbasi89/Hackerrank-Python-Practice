@@ -97,16 +97,107 @@
 # print(a == a[::-1])
 
 
+
+
+# def print_rangoli(size):
+#     # your code goes here
+#     ls = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+#     lrwidth = (size+size-1+size+size-2-3)//2
+#     for i in range(size):
+
+#         left = ""
+
+#         for j+1 in range(size):
+#             print(ls[size-1])
+            
+#         right = ""
+        
+#         for k in range(size):
+            
+            
+#         print("ccc".ljust(lrwidth,'-')+(ls[size-1-i]).center(3, '-')+'eee'.rjust(lrwidth, '-'))
+
+# if __name__ == '__main__':
+#     n = int(input())
+#     print_rangoli(n)
+
+
+
+
+
+
+# import re
+
+# # Given string
+# text = "I like apples and oranges."
+
+# # Regular expression pattern
+# pattern = r"apple"
+
+# # Search for the pattern
+# if re.search(pattern, text):
+#     print("The word 'apple' is present.")
+# else:
+#     print("The word 'apple' is not present.")
+
+
+
+
+
+
+
+
+
+# import re
+
+# # Given string
+# text = "Hello world"
+
+# # Regular expression pattern
+# pattern = '^Hello.*world$'
+
+# # Search for the pattern
+# if re.search(pattern, text):
+#     print("The string starts with 'Hello' and ends with 'world'.")
+# else:
+#     print("The string does not start with 'Hello' or does not end with 'world'.")
+
+
+
+
+
+
+
+
+
+# import re
+
+# # Given string
+# text = "example@email.com"
+
+# # Regular expression pattern
+# pattern = r'^[a-zA-Z0-9_]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+
+# # Search for the pattern
+# if re.match(pattern, text):
+#     print("This is a valid email address.")
+# else:
+#     print("This is not a valid email address.")
+
+
+
+
+
+
 import re
 
-# Given string
-text = "I like apples and oranges."
+dates_list = [
+    "Today's date is 08/03/2024.",
+    "The event will take place on 15/05/2024.",
+    "Please submit your report by 30/04/2024."
+]
 
-# Regular expression pattern
-pattern = r"apple"
-
-# Search for the pattern
-if re.search(pattern, text):
-    print("The word 'apple' is present.")
-else:
-    print("The word 'apple' is not present.")
+for i in dates_list:
+    pattern = '^{2}[0-9]/{2}[0-9]/{4}[0-9]'
+    d = re.search(pattern, i)
+    print(d)
