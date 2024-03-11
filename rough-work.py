@@ -189,15 +189,93 @@
 
 
 
-import re
+# import re
 
-dates_list = [
-    "Today's date is 08/03/2024.",
-    "The event will take place on 15/05/2024.",
-    "Please submit your report by 30/04/2024."
-]
+# dates_list = [
+#     "Today's date is 08/03/2024.",
+#     "The event will take place on 15/05/2024.",
+#     "Please submit your report by 30/04/2024."
+# ]
 
-for i in dates_list:
-    pattern = '^{2}[0-9]/{2}[0-9]/{4}[0-9]'
-    d = re.search(pattern, i)
-    print(d)
+# for i in dates_list:
+#     pattern = '^{2}[0-9]/{2}[0-9]/{4}[0-9]'
+#     d = re.search(pattern, i)
+#     print(d)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# array mathematics
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# import numpy as np
+
+# nm = list(map(int, input().split()))
+
+# Aa = []
+# for i in range(nm[0]):
+#     A = list(map(int, input().split()))
+#     Aa.append(A)
+    
+# Bb = []
+# for i in range(nm[0]):
+#     B = list(map(int, input().split()))
+#     Bb.append(B)
+  
+# print(np.array(Bb[0]))
+# for i in range(nm[0]):
+#     print(np.add(np.reshape(np.array(Aa[i]), (nm[0], nm[1])) , np.reshape(np.array(Bb[i]), (nm[0], nm[1]))))
+#     print(np.subtract(np.reshape(np.array(Aa[i]), (nm[0], nm[1])) , np.reshape(np.array(Bb[i]), (nm[0], nm[1]))))
+#     print(np.multiply(np.reshape(np.array(Aa[i]), (nm[0], nm[1])) , np.reshape(np.array(Bb[i]), (nm[0], nm[1]))))
+#     print(np.floor_divide(np.reshape(np.array(Aa[i]), (nm[0], nm[1])) , np.reshape(np.array(Bb[i]), (nm[0], nm[1]))))
+#     print(np.mod(np.reshape(np.array(Aa[i]), (nm[0], nm[1])) , np.reshape(np.array(Bb[i]), (nm[0], nm[1]))))
+#     print(np.power(np.reshape(np.array(Aa[i]), (nm[0], nm[1])) , np.reshape(np.array(Bb[i]), (nm[0], nm[1]))))
+
+
+# for i in range(2):
+#     print(np.add(np.reshape(np.array(Aa[:nm[1]]), (nm[0], nm[1])) , np.reshape(np.array(Bb[:nm[1]]), (nm[0], nm[1]))))
+#     print(np.subtract(np.reshape(np.array(Aa[:nm[1]]), (nm[0], nm[1])) , np.reshape(np.array(Bb[:nm[1]]), (nm[0], nm[1]))))
+#     print(np.multiply(np.reshape(np.array(Aa[:nm[1]]), (nm[0], nm[1])) , np.reshape(np.array(Bb[:nm[1]]), (nm[0], nm[1]))))
+#     print(np.floor_divide(np.reshape(np.array(Aa[:nm[1]]), (nm[0], nm[1])) , np.reshape(np.array(Bb[:nm[1]]), (nm[0], nm[1]))))
+#     print(np.mod(np.reshape(np.array(Aa[:nm[1]]), (nm[0], nm[1])) , np.reshape(np.array(Bb[:nm[1]]), (nm[0], nm[1]))))
+#     print(np.power(np.reshape(np.array(Aa[:nm[1]]), (nm[0], nm[1])) , np.reshape(np.array(Bb[:nm[1]]), (nm[0], nm[1]))))
+
+
+
+
+
+
+
+
+
+
+
+
+
+# size = 5
+# ls = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+# left = ""
+
+# x = 0
+# for j in range(len(ls[size])):
+#     x += 1
+#     # print(j)
+#     print(ls[size-1-j:size-1])
+
+# # print(ls[size-1-x:size-1])
+
+# d = 5
+# e = 2
+# print(e**d)
+
+
