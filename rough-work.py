@@ -279,3 +279,79 @@
 # print(e**d)
 
 
+
+
+
+
+# def minion_game(string):
+#     # your code goes here
+#     # if string is "BANANA"
+#     lngth = len(string)
+#     lst = list(string)
+#     cons = ['B','C','D','F','G','H','J','K','L','M','N','P','Q','R','S','T','V','W','X','Y','Z']
+#     vow = ['A','E','I','O','U']
+#     St = []
+#     for i in range(lngth):
+#         for j in range(i, lngth):
+            
+#             x = ''.join(lst[i:j+1])
+#             if x[0] in cons:
+#                 St.append(x)
+#             else:
+#                 continue
+
+#     Kv = []
+#     for i in range(lngth):
+#         for j in range(i, lngth):
+            
+#             x = ''.join(lst[i:j+1])
+#             if x[0] in vow:
+#                 Kv.append(x)
+#             else:
+#                 continue
+    
+#     if len(St) > len(Kv):
+#         print(f"Stuart {len(St)}")
+#     elif len(St) < len(Kv):
+#         print(f"Kevin {len(Kv)}")
+#     else:
+#         print("Draw")
+            
+    
+
+# if __name__ == '__main__':
+#     s = input()
+#     minion_game(s)
+
+
+
+
+
+
+
+
+
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+from itertools import combinations
+
+KM = list(map(int, input().split()))
+K = KM[0]
+M = KM[1]
+
+def solver(m, *args):
+    xx = 0
+    for arg in args:
+        xx += arg**2
+    return xx%m
+
+scheme = []
+for i in range(K):
+    scheme.append(list(map(int, (input().split())[1:])))
+
+    
+
+
+
+print(solver(1000, 5, 9, 10))
