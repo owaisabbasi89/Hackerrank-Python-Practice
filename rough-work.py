@@ -99,28 +99,6 @@
 
 
 
-# def print_rangoli(size):
-#     # your code goes here
-#     ls = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-#     lrwidth = (size+size-1+size+size-2-3)//2
-#     for i in range(size):
-
-#         left = ""
-
-#         for j+1 in range(size):
-#             print(ls[size-1])
-            
-#         right = ""
-        
-#         for k in range(size):
-            
-            
-#         print("ccc".ljust(lrwidth,'-')+(ls[size-1-i]).center(3, '-')+'eee'.rjust(lrwidth, '-'))
-
-# if __name__ == '__main__':
-#     n = int(input())
-#     print_rangoli(n)
-
 
 
 
@@ -334,24 +312,64 @@
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 
-from itertools import combinations
+# from itertools import combinations
 
-KM = list(map(int, input().split()))
-K = KM[0]
-M = KM[1]
+# KM = list(map(int, input().split()))
+# K = KM[0]
+# M = KM[1]
 
-def solver(m, *args):
-    xx = 0
-    for arg in args:
-        xx += arg**2
-    return xx%m
+# def solver(m, lst):
+#     xx = 0
+#     for i in lst:
+#         xx += i**2
+#     return xx%m
 
-scheme = []
-for i in range(K):
-    scheme.append(list(map(int, (input().split())[1:])))
+# scheme = []
+# for i in range(K):
+#     scheme.append(list(map(int, (input().split())[1:])))
 
     
 
+# print(solver(1000, [5, 9, 10]))
+
+# # print(scheme)
 
 
-print(solver(1000, 5, 9, 10))
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def print_rangoli(size):
+
+#     # your code goes here
+#     ls = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+#     lrwidth = (size+size-1+size+size-2-3)//2
+#     for i in range(size):
+
+#         left = ""
+
+#         for j in ls[size-i:size]:
+#             left += f"-{j}"
+            
+#         right = ""
+        
+#         for k in ls[size-i:size]:
+#             right += f"{k}-"
+            
+            
+#         print(left.rjust(lrwidth,'-')+(ls[size-1-i]).center(3, '-')+right.ljust(lrwidth, '-'))
+
+
+
+# if __name__ == '__main__':
+#     n = int(input())
+#     print_rangoli(n)
