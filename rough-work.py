@@ -375,6 +375,54 @@
 #     print_rangoli(n)
 
 
-for i in range(1,int(input())+1):
-    print((sum(map(lambda x: 10**x, range(i))))**2)
+# for i in range(1,int(input())+1):
+#     print((sum(map(lambda x: 10**x, range(i))))**2)
 
+
+
+
+
+
+
+
+
+
+
+
+
+def fun(s):
+    # return True if s is a valid email, else return False
+    uname = s.split('@')[0]
+    dom = (s.split('@')[1]).split('.')[0]
+    ext = s.split('.')[1]
+    ema = []
+    if uname.isalnum() or uname.isalpha() or uname.isdigit() or ('-' in uname.split()) or ('_' in uname.split()):
+        ema.append('True')
+    else:
+        ema.append('False')
+    if dom.isalnum() or dom.isalpha() or dom.isdigit():
+        ema.append('True')
+    else:
+        ema.append('False')
+    if ext.isalpha() and len(ext) == 3:
+        ema.append('True')
+    else:
+        ema.append('False')
+    if 'False' in ema:
+        return False
+    else:
+        return True
+        
+
+def filter_mail(emails):
+    return list(filter(fun, emails))
+
+if __name__ == '__main__':
+    n = int(input())
+    emails = []
+    for _ in range(n):
+        emails.append(input())
+
+filtered_emails = filter_mail(emails)
+filtered_emails.sort()
+print(filtered_emails)
